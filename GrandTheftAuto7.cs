@@ -1,17 +1,18 @@
-// UNTESTED!!! Too lazy to test also not fake but clickbait
+// Not fake, its clickbait
 using System;
+using System.Threading.Tasks.Dataflow;
 
 // INTENTIONAL TYPO
-class Clicbkait {
+public class Clicbkait {
   private bool _isClickbait = true; // Unfortunately
   public bool IsThisClickbait {
-    get { return _isClickbait }
+    get { return _isClickbait; }
   }
 }
 
 class Program {
-  internal Clicbkait bait = new Clicbkait();
+  static Clicbkait b = new Clicbkait();
   static void Main(string[] args) {
-    Console.WriteLine(bait.IsThisClickbait);
+    Console.WriteLine(b.IsThisClickbait);
   }
 }
